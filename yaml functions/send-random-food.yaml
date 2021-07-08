@@ -1,0 +1,22 @@
+metadata:
+  name: send-random-food
+  labels:
+    nuclio.io/project-name: c9af2e9d-c13e-49a8-9b53-0ce4b6eb1be1
+spec:
+  handler: "main:handler"
+  runtime: nodejs
+  resources: {}
+  image: "nuclio/processor-send-random-food:latest"
+  minReplicas: 1
+  maxReplicas: 1
+  targetCPU: 75
+  build:
+    functionSourceCode: dmFyIG1xdHQgPSByZXF1aXJlKCdtcXR0JyksIHVybCA9IHJlcXVpcmUoJ3VybCcpOwp2YXIgbXF0dF91cmwgPSB1cmwucGFyc2UocHJvY2Vzcy5lbnYuQ0xPVURBTVFQX01RVFRfVVJMIHx8ICdtcXR0Oi8vZ3Vlc3Q6Z3Vlc3RAMTAuMC4yLjE1OjE4ODMnKTsKdmFyIGF1dGggPSAobXF0dF91cmwuYXV0aCB8fCAnOicpLnNwbGl0KCc6Jyk7CnZhciB1cmwgPSAibXF0dDovLyIgKyBtcXR0X3VybC5ob3N0Owp2YXIgb3B0aW9ucyA9IHsKICAgIHBvcnQ6IG1xdHRfdXJsLnBvcnQsCiAgICBjbGllbnRJZDogJ21xdHRqc18nICsgTWF0aC5yYW5kb20oKS50b1N0cmluZygxNikuc3Vic3RyKDIsIDgpLAogICAgdXNlcm5hbWU6IGF1dGhbMF0sCiAgICBwYXNzd29yZDogYXV0aFsxXSwKfTsKZXhwb3J0cy5oYW5kbGVyID0gZnVuY3Rpb24oY29udGV4dCwgZXZlbnQpIHsKICAgIHZhciBjbGllbnQgPSBtcXR0LmNvbm5lY3QodXJsLCBvcHRpb25zKTsKICAgIGNsaWVudC5vbignY29ubmVjdCcsIGZ1bmN0aW9uKCkgewogICAgICAgIHZhciBmb29kID0gTWF0aC5mbG9vcihNYXRoLnJhbmRvbSgpICogMTAxKS50b1N0cmluZygpOwogICAgICAgIGNsaWVudC5wdWJsaXNoKCdpb3Qvc2Vuc29ycy9mb29kJywgZm9vZCwgZnVuY3Rpb24oKSB7CiAgICAgICAgICAgIGNsaWVudC5lbmQoKTsKICAgICAgICAgICAgY29udGV4dC5jYWxsYmFjaygnU2VudCAnICsgZm9vZCk7CiAgICAgICAgfSApOwogICAgfSk7Cn07
+    commands:
+      - 'npm install mqtt'
+    runtimeAttributes:
+      repositories: []
+    codeEntryType: sourceCode
+  platform: {}
+  readinessTimeoutSeconds: 60
+  version: 1
