@@ -89,7 +89,7 @@ function waitForMessage(msg) {
   // Message to bot
   bot.telegram.sendMessage(
     chatId,
-    `Hey! The dispenser has no food and the dog bowl food is at ${msg.content.toString()} grams! 🏜\nWhat do you want to do?`,
+    `Hey! The dispenser has no food and the dog bowl food is at ${msg.content.toString()} grams! 😕\nWhat do you want to do?`,
     options
   )
 }
