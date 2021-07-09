@@ -1,9 +1,5 @@
 # Dog Food Monitoring
 
-<p align="center">
-<img src="doc/logo.png" alt="drawing" width="200"/>
-</p>
-
 ## Summary
 
 [- Introduction](#Introduction)\
@@ -34,7 +30,7 @@ At this point, inside **telegram_bot.js** the publication in **_iot/dispenser_**
 The user chooses what to do but, of course, the action is only simulated.
 
 <p align="center">
-<img src="doc/architecture.jpeg" alt="drawing"/>
+<img src="arch.png" alt="drawing"/>
 </p>
 
 ## Project structure
